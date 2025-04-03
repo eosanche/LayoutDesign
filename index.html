@@ -50,11 +50,11 @@
       }
       
          .image-gallery2 {
-        column-count: 1;
+      column-count: 3;
         width: 100%;
         margin: auto;
         position: absolute;
-        top: 1900px;
+        top: 2800px;
       }
 
       .image-containers2 {
@@ -65,22 +65,6 @@
         position: relative;
       }
       
-               .image-gallery3 {
-        column-count: 1;
-        width: 100%;
-        margin: auto;
-        position: absolute;
-        top: 3300px;
-      }
-
-      .image-containers3 {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 10px;
-        overflow: hidden;
-        position: relative;
-      }
-
       /*contact info footer */
 
       .contact-info-bar {
@@ -361,56 +345,7 @@ left: 500px;
     flex-direction: column;
         right: 25px;
 }
-
-      .decor-underlineheading2 {
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        animation: glow-text 5s infinite ease-in-out;
-      }
-
-      .decor-underlineheading2::after {
-        content: "";
-        display: block;
-        width: 0%;
-        height: 3px;
-        background-color: #FFFFFF;
-        position: absolute;
-        bottom: -10px;
-        animation: lineani2 5s infinite ease;
-      }
-
-      @keyframes glow-text {
-        0% {
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-        }
-
-        20% {
-          text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-        }
-
-        100% {
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-        }
-      }
-
-      @keyframes lineani2 {
-        0% {
-          width: 0%;
-          left: 0%;
-        }
-
-        50% {
-          width: 100%;
-          left: 0%;
-        }
-
-        100% {
-          width: 0%;
-          left: 100%;
-        }
-      }
-
+      
       .paragraphcontent {
         display: block;
         position: absolute;
@@ -432,13 +367,13 @@ left: 500px;
     </style>
   </head>
   <body>
+      <!-- gallery 1 -->
     <div class="image-gallery">
     
       <div class="image-containers">
           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
       </div>
       
-     
                <div class="image-containers">
           <img src="Written_in_the_Stars_Covers-Indesign_pages-14-15-01.jpg" alt="The first 3D render of a Ghibli Landscape with moving grass, and leaves." class="image-size1">
       </div>
@@ -454,12 +389,19 @@ left: 500px;
       <div class="image-containers">
           <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
       </div>   
-      
+       </div>
+    <!-- gallery 2 -->
        <div class="image-gallery2">
       <div class="image-containers2">
-          <img src="Distance.png" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+          <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
       </div>
+               <div class="image-containers2">
+          <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
       </div>
+               <div class="image-containers2">
+          <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+     
     </div>
     
     
