@@ -1,23 +1,473 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<!-- Emerson -->
+<!-- March 14 2025 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  body::before {
-    content: "";
+    <title>index.html</title>
+
+    <style>
+      body {
+        background-color: #1E2121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      /* All images containers and hover states */
+
+      .image-gallery {
+        column-count: 2;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 500px;
+      }
+
+      .image-containers {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .image-size1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+         .image-gallery2 {
+        column-count: 1;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 1900px;
+      }
+
+      .image-containers2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+               .image-gallery3 {
+        column-count: 1;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 3300px;
+      }
+
+      .image-containers3 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /*contact info footer */
+
+      .contact-info-bar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        padding: 45px;
+        background-color: #151616;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 5550px;
+      }
+
+      .contact-info-bar li {
+        list-style: none;
+        display: inline;
+        padding: 20px;
+      }
+
+      .contact-info-bar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+
+      .info-bar-copyright {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 2%;
+        padding: 15px;
+        background-color: #0E0E0E;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 5620px;
+      }
+
+      .info-bar-copyright li {
+        list-style: none;
+        display: inline;
+      }
+
+      /*nav bar*/
+      #nav {
+        background-color: #151616;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        padding: 5px;
+        clear: both;
+        float: none;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 0px;
+      }
+
+      /*code for nav list*/
+      #nav li {
+        list-style: none;
+        display: inline;
+      }
+
+      #nav ul {
+        padding: 5px;
+        float: right;
+        display: flex;
+      }
+
+      #nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 40px;
+      }
+
+      #nav a:hover {
+        color: #aeaca8;
+      }
+
+      #nav a:active {
+        color: #262626;
+      }
+
+      .navlinedivide {
+        display: inline-block;
+        height: 15px;
+        width: 2px;
+        border-radius: 50px;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+      }
+
+      /* text animations */
+
+      .text-animation-box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        width: 100%;
+        padding: 40px;
+        left: 20px;
+        top: 160%;
+        overflow: hidden;
+      }
+
+      nameani {
+        display: flex;
+        position: relative;
+        font-size: 90px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        animation-name: First-Name;
+        animation-duration: 1s;
+        color: #FFF9F0;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* keyframe animations */
+
+      #nameani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes First-Name {
+        0% {
+          opacity: 0;
+          top: 60px;
+        }
+
+        100% {
+          top: 0px;
+        }
+      }
+
+      #headingcontentani {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes head-Name {
+
+        0% {
+          opacity: 0;
+          top: 0px;
+        }
+
+        50% {
+          opacity: 0;
+          top: 0px;
+        }
+
+        100% {
+          opacity: 1;
+          top: 0px;
+        }
+      }
+
+      /* header quote container */
+
+      .headingcontent {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 750px;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+      }
+
+      
+      /* headers and paragraphs containers */
+.info-box {
+    width: 40%; 
+    padding: 10px;
     position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
+    top: 320px;
+    left: 53px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+      
+      .info-box.date {
+    top: 400px;
+    left: 53px;
+}
+      
+      .info-box.description {
+    top: 260px;
+    left: 53px;
+      }
+      
+            .info-box.date2 {
+    top: 1740px;
+    left: 53px;
+}
+      
+      .info-box.description2 {
+    top: 1600px;
+    left: 53px;
+      }
+      
+                  .info-box.date3 {
+    top: 3100px;
+    left: 53px;
+}
+      
+      .info-box.description3 {
+    top: 3000px;
+    left: 53px;
+      }
+
+.info-header {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 0;
+    width: 100%; 
+}
+
+.info-text {
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    text-align: left;
+}
+
+      .decor-underlineheading2 {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        animation: glow-text 5s infinite ease-in-out;
+      }
+
+      .decor-underlineheading2::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -10px;
+        animation: lineani2 5s infinite ease;
+      }
+
+      @keyframes glow-text {
+        0% {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+        }
+
+        20% {
+          text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        100% {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+        }
+      }
+
+      @keyframes lineani2 {
+        0% {
+          width: 0%;
+          left: 0%;
+        }
+
+        50% {
+          width: 100%;
+          left: 0%;
+        }
+
+        100% {
+          width: 0%;
+          left: 100%;
+        }
+      }
+
+      .paragraphcontent {
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        left: 45px;
+        top: 200px;
+        text-align: left;
+        width: 60%;
+      }
+
+      p {
+        padding: 20px;
+        font-size: 20px;
+        display: flex;
+        font-family: "Figtree", sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-gallery">
     
+      <div class="image-containers">
+          <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
+      </div>
+               <div class="image-containers">
+          <img src="Written_in_the_Stars_Covers-Indesign_pages-14-15-01.jpg" alt="The first 3D render of a Ghibli Landscape with moving grass, and leaves." class="image-size1">
+      </div>
+      
+          <div class="image-containers">
+          <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+      </div>
+      
+           <div class="image-containers">
+          <img src="Written_in_the_Stars_Covers-Indesign.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+      </div>
+      
+          <div class="image-containers">
+          <img src="Written_in_the_Stars_Pages_46-47-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+      </div>
+      
+     
+      
+
+    </div>
+    
+       <div class="image-gallery2">
+      <div class="image-containers2">
+          <img src="Distance.png" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+    </div>
+    
+    
+    <div class="info-box description">
+    <h1 class="info-header">Role.</h1>
+    <p class="info-text">  Layout Designer</p>
+</div>
+    
+<div class="info-box date">
+    <h1 class="info-header">Date.</h1>
+    <p class="info-text">Sept. 2023 - Mar. 2025.</p>
+</div>
+
+
+    <div class="contact-info-bar">
+      <ul>
+        <li>Social(s):<a href="https://www.instagram.com/emiwhem/?igsh=MWQ5dzU2bjNnZ3lrNA%3D%3D#"><u>Instagram</u></a></li>
+        <li>Email: sanchez.o.emerson@gmail.com</li>
+        <li>Tel: 905-781-0185</li>
+      </ul>
+    </div>
+
+    <div class="info-bar-copyright">
+      ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
+    </div>
+
+    <div class="text-animation-box">
+      <nameani id="nameani">Layout Design</nameani>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
+        <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
+        <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
