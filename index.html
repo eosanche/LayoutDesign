@@ -25,14 +25,37 @@
         overflow-y: scroll;
       }
 
-      /* All images containers and hover states */
+      /* All images containers*/
 
+      .gallerybox {
+            width: 100%;
+      text-align: center;
+        position: absolute;
+      top: 500px;
+      }
+      
+        .gallery-title {
+      font-size: 48px;
+      font-family: "Poppins", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 600;
+
+    }
+      
+       .gallery-date {
+      font-size: 24px;
+      font-family: "Figtree", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 300;
+         margin-bottom: 50px;
+    }
+      
       .image-gallery {
         column-count: 3;
         width: 100%;
         margin: auto;
-        position: absolute;
-        top: 700px;
       }
 
       .image-containers {
@@ -48,13 +71,41 @@
         height: 100%;
         object-fit: cover;
       }
+
+      
+      /* second gallery */
+      
+      
+          .gallerybox2 {
+            width: 100%;
+      text-align: center;
+        position: absolute;
+      top: 2400px;
+      }
+      
+        .gallery-title2 {
+      font-size: 48px;
+      font-family: "Poppins", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 600;
+
+    }
+      
+       .gallery-date2 {
+      font-size: 24px;
+      font-family: "Figtree", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 300;
+         margin-bottom: 50px;
+    }
+      
       
          .image-gallery2 {
       column-count: 3;
         width: 100%;
         margin: auto;
-        position: absolute;
-        top: 2700px;
       }
 
       .image-containers2 {
@@ -371,10 +422,14 @@ left: 500px;
         font-weight: 300;
         color: #FFFFFF;
       }
+   
     </style>
   </head>
   <body>
       <!-- gallery 1 -->
+      <div class="gallerybox">
+    <h1 class="gallery-title">Written In The Stars</h1>
+    <h1 class="gallery-date">Jan 2024 - April 2024.</h1>
     <div class="image-gallery">
     
       <div class="image-containers">
@@ -395,9 +450,14 @@ left: 500px;
       
       <div class="image-containers">
           <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+      </div>
       </div>   
        </div>
+    
     <!-- gallery 2 -->
+       <div class="gallerybox2">
+    <h1 class="gallery-title2">It's Not That Serious!</h1>
+    <h1 class="gallery-date2">Sept. 2024 - Jan. 2025.</h1>
        <div class="image-gallery2">
       <div class="image-containers2">
           <img src="It's_Not_That_Serious_covers-2-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
@@ -429,6 +489,7 @@ left: 500px;
                <div class="image-containers2">
           <img src="It's_Not_That_Serious_covers-2-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
       </div>
+         </div>
      
     </div>
     
@@ -445,22 +506,6 @@ left: 500px;
 <div class="info-box date">
     <h1 class="info-header">Date.</h1>
     <p class="info-text">Jan 2024 - April 2025.</p>
-</div>
-    
-            <div class="info-box2 description">
-    <h1 class="info-header2">Written In The Stars</h1>
-</div>
-    
-    <div class="info-box2 date">
-    <p class="info-text2">Jan 2024 - April 2024.</p>
-</div>
-
-                <div class="info-box2-2 description">
-    <h1 class="info-header2">It's Not That Serious!</h1>
-</div>
-    
-    <div class="info-box2-2 date">
-    <p class="info-text2">Sept 2024 - Jan 2025.</p>
 </div>
 
     <div class="contact-info-bar">
